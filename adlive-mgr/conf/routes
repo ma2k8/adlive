@@ -1,0 +1,15 @@
+# Routes
+# This file defines all adlive.application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET        /                     @adlive.application.controllers.Dashboard.index
+POST       /create               @adlive.application.controllers.Dashboard.create
+PUT        /update               @adlive.application.controllers.Dashboard.create
+DELETE     /delete               @adlive.application.controllers.Dashboard.create
+
+#
+## Map static resources from the /public folder to the /assets URL path
+#GET        /assets/*file         @adlive.application.controllers.Assets.at(path="/public", file)
+#
+#GET        /webjars/*file        @adlive.application.controllers.WebJarAssets.at(file)
